@@ -1,0 +1,13 @@
+Universe     = vanilla
+Executable   = showhost2.csh
+Notification = Never
+Initialdir   = /sphenix/tg/tg01/commissioning/INTT/work/hachiya/batchtest/example3_2
+request_memory = 4096MB
+# the importance of this PeriodicHold will be explained in the next section
+PeriodicHold = (NumJobStarts>=1 && JobStatus == 1)
+
+Arguments    = $(arg1) $(arg2)
+Output       = condor_$(process).out
+Error        = condor_$(process).err
+Log          = /tmp/condor_0.log
+Queue arg1, arg2 from queue.list

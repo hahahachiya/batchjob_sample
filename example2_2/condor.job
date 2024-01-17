@@ -1,0 +1,68 @@
+Universe     = vanilla
+Executable   = showhost.csh
+Notification = Never
+Initialdir   = /sphenix/tg/tg01/commissioning/INTT/work/hachiya/batchtest/example2_2
+request_memory = 4096MB
+# the importance of this PeriodicHold will be explained in the next section
+PeriodicHold = (NumJobStarts>=1 && JobStatus == 1)
+
+Output       = condor_0.out
+Error        = condor_0.err
+Log          = /tmp/condor_0.log
+Queue
+#--------------------------------
+
+Output       = condor_1.out
+Error        = condor_1.err
+Log          = /tmp/condor_1.log
+Queue
+#--------------------------------
+
+Output       = condor_2.out
+Error        = condor_2.err
+Log          = /tmp/condor_2.log
+Queue
+#--------------------------------
+
+Output       = condor_3.out
+Error        = condor_3.err
+Log          = /tmp/condor_3.log
+Queue
+#--------------------------------
+
+Output       = condor_4.out
+Error        = condor_4.err
+Log          = /tmp/condor_4.log
+Queue
+#--------------------------------
+
+Output       = condor_5.out
+Error        = condor_5.err
+Log          = /tmp/condor_5.log
+Queue
+#--------------------------------
+
+Output       = condor_6.out
+Error        = condor_6.err
+Log          = /tmp/condor_6.log
+Queue
+#--------------------------------
+
+Output       = condor_7.out
+Error        = condor_7.err
+Log          = /tmp/condor_7.log
+Queue
+#--------------------------------
+
+Output       = condor_8.out
+Error        = condor_8.err
+Log          = /tmp/condor_8.log
+Queue
+#--------------------------------
+
+Output       = condor_9.out
+Error        = condor_9.err
+Log          = /tmp/condor_9.log
+Queue
+#--------------------------------
+

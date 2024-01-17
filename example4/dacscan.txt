@@ -1,0 +1,7 @@
+TString fname[5] = {
+   "/sphenix/tg/tg01/commissioning/INTT/work/ysugiyama/root_file/beam_intt3-00021048-0000_event_base.root",
+   "/sphenix/tg/tg01/commissioning/INTT/work/ysugiyama/root_file/beam_intt3-00021037-0000_event_base.root",
+   "/sphenix/tg/tg01/commissioning/INTT/work/ysugiyama/root_file/beam_intt3-00021029-0000_event_base.root",
+   "/sphenix/tg/tg01/commissioning/INTT/work/ysugiyama/root_file/beam_intt3-00021019-0000_event_base.root",
+   "/sphenix/tg/tg01/commissioning/INTT/work/ysugiyama/root_file/beam_intt3-00021018-0000_event_base.root",
+ };

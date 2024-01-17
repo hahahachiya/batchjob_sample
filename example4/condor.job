@@ -1,0 +1,15 @@
+Universe 	= vanilla
+Executable 	= Fun4All_Intt_RecoCluster.csh
+Arguments = $(nevent) $(infile) $(outfile) $(dacfile) $(bcofile) $(flag) $(run)
+Notification 	= Never
+Output  	= condor_$(run).out
+Error           = condor_$(run).err
+Log  		= /tmp/condor$(run).log
+Initialdir  	= /sphenix/tg/tg01/commissioning/INTT/work/hachiya/batchtest/example4
+# Jobs by default use 1.5Gb of RAM, you need to ask for more if needed
+# with request_memory. Be mindful - if you request too little your jobs will be evicted, if you request way too much it will take longer for your job to start
+request_memory = 4096MB
+# the importance of this PeriodicHold will be explained in the next section
+PeriodicHold = (NumJobStarts>=1 && JobStatus == 1)
+Queue nevent, infile, outfile, dacfile, bcofile, flag, run from queue.list
+#Queue nevent, infile, outfile, dacfile, bcofile, flag, run from queue2.list
